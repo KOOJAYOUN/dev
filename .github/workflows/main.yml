@@ -35,3 +35,5 @@ jobs:
           java-version: '11'
           cache: 'gradle'
 
+      - name: chmod gradle
+        run: chmod +x ./gradlew
