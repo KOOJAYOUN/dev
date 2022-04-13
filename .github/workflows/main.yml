@@ -37,3 +37,6 @@ jobs:
 
       - name: chmod gradle
         run: chmod +x ./gradlew
+        
+      - name: build
+        run: ./gradlew build --no-daemon
