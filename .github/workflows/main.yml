@@ -34,9 +34,7 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
           cache: 'gradle'
+      - run: ./gradlew build --no-daemon
 
       - name: chmod gradle
         run: chmod +x ./gradlew
-        
-      - name: build
-        run: ./gradlew build --no-daemon
